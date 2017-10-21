@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Utility;
 using System.Linq;
+
 public class GridManager : Singleton<GridManager>{
 
     public Vector2 Size;
@@ -11,13 +12,25 @@ public class GridManager : Singleton<GridManager>{
     private TetrisPiece _CurrentPiece;
     private Dictionary<Vector2, TetrisPiece> _Pieces;
 
+    public GameObject templatePiece;
+    public Transform PiecesParent;
+
     private void Awake()
     {
         _Pieces = new Dictionary<Vector2, TetrisPiece>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    internal void Trash()
+    {
+        if (_CurrentPiece != null)
+        {
+            Destroy(_CurrentPiece.gameObject);
+            _CurrentPiece = null;
+        }
+    }
+
+    // Update is called once per frame
+    void Update () {
 
         if (_CurrentPiece != null)
         {
@@ -27,6 +40,11 @@ public class GridManager : Singleton<GridManager>{
             {
                 _CurrentPiece.Rotate();
             }
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _CurrentPiece = Instantiate(templatePiece, PiecesParent).GetComponent<TetrisPiece>();
+            _CurrentPiece.ChangeShape(UnityEngine.Random.Range(1, 16));
         }
 	}
 
@@ -73,7 +91,6 @@ public class GridManager : Singleton<GridManager>{
     {
         Vector2 cp = new Vector2(x, y);
         return _CurrentPiece.Cells().All(v => {
-            Debug.Log(v + cp);
             if (v.x + cp.x >= Size.x || v.y + cp.y >= Size.y) return false;
             if (v.x + cp.x < 0 || v.y + cp.y < 0) return false;
             return CellIsEmpty((int)(v.x + cp.x), (int)(v.y + cp.y));    
@@ -95,6 +112,7 @@ public class GridManager : Singleton<GridManager>{
         {
             _Pieces.Remove(v);
         }
+        piece.GridCells.Clear();
     }
     
 }
