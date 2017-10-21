@@ -1,17 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: b2a49d208c7657d4c8a149b4150a809f
-timeCreated: 1508564108
-licenseType: Pro
 ModelImporter:
   serializedVersion: 21
-=======
-guid: 9b379ea87b1e6b04598b1dda704284e0
-timeCreated: 1508564614
-licenseType: Pro
-ModelImporter:
-  serializedVersion: 22
->>>>>>> d58858cd9f7bd5c743e336c8de8509a02a05706a
   fileIDToRecycleName:
     100000: //RootNode
     100002: pCylinder1
@@ -45,23 +35,10 @@ ModelImporter:
     3300000: pCylinder4
     4300000: pCylinder4
     9500000: //RootNode
-<<<<<<< HEAD
-=======
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: gold
-    second: {fileID: 2100000, guid: be14b713d1b20144293b9be8659e2963, type: 2}
->>>>>>> d58858cd9f7bd5c743e336c8de8509a02a05706a
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-<<<<<<< HEAD
-=======
-    materialLocation: 0
->>>>>>> d58858cd9f7bd5c743e336c8de8509a02a05706a
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -74,10 +51,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-<<<<<<< HEAD
-=======
-    importAnimatedCustomProperties: 0
->>>>>>> d58858cd9f7bd5c743e336c8de8509a02a05706a
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

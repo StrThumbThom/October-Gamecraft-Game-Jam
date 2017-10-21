@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 161322401}
   - component: {fileID: 161322400}
   - component: {fileID: 161322402}
+  - component: {fileID: 161322403}
   m_Layer: 5
   m_Name: MainMenuPanel
   m_TagString: Untagged
@@ -388,6 +389,19 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &161322403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 161322398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66a40c65b28f4f34cba5fe08139e98d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSystem: {fileID: 1533737382}
+  selectedObject: {fileID: 95877973}
 --- !u!1001 &215289200
 Prefab:
   m_ObjectHideFlags: 0
@@ -830,6 +844,7 @@ GameObject:
   - component: {fileID: 894183596}
   - component: {fileID: 894183595}
   - component: {fileID: 894183594}
+  - component: {fileID: 894183597}
   m_Layer: 5
   m_Name: HelpPanel
   m_TagString: Untagged
@@ -913,6 +928,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 894183592}
+--- !u!114 &894183597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894183592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66a40c65b28f4f34cba5fe08139e98d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSystem: {fileID: 1533737382}
+  selectedObject: {fileID: 1820396125}
 --- !u!1 &906458436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,6 +1522,7 @@ GameObject:
   - component: {fileID: 1626612793}
   - component: {fileID: 1626612792}
   - component: {fileID: 1626612791}
+  - component: {fileID: 1626612794}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -1558,7 +1587,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1626612792}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1626612794}
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1626612792
@@ -1594,6 +1634,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1626612789}
+--- !u!114 &1626612794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1626612789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07b6d5a54cc6b04c986142fe66fc7fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1643150927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,7 +1655,6 @@ GameObject:
   - component: {fileID: 1643150928}
   - component: {fileID: 1643150930}
   - component: {fileID: 1643150929}
-  - component: {fileID: 1643150931}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1669,17 +1719,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1643150927}
---- !u!114 &1643150931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1643150927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e07b6d5a54cc6b04c986142fe66fc7fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1697606988
 Prefab:
   m_ObjectHideFlags: 0
@@ -2129,6 +2168,7 @@ GameObject:
   - component: {fileID: 1852716654}
   - component: {fileID: 1852716653}
   - component: {fileID: 1852716652}
+  - component: {fileID: 1852716655}
   m_Layer: 5
   m_Name: AudioPanel
   m_TagString: Untagged
@@ -2215,6 +2255,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1852716650}
+--- !u!114 &1852716655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1852716650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66a40c65b28f4f34cba5fe08139e98d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSystem: {fileID: 1533737382}
+  selectedObject: {fileID: 232846212}
 --- !u!1 &2030320853
 GameObject:
   m_ObjectHideFlags: 0
