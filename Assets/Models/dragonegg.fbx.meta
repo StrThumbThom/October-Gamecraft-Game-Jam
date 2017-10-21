@@ -1,17 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: c0b5969552c629e468fa451514a4b4be
-timeCreated: 1508556216
-licenseType: Pro
-ModelImporter:
-  serializedVersion: 22
-=======
-guid: bcb83201029ee9c4fae289c4c54de41c
-timeCreated: 1508559905
-licenseType: Pro
 ModelImporter:
   serializedVersion: 21
->>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -19,23 +9,10 @@ ModelImporter:
     3300000: //RootNode
     4300000: pSphere1
     9500000: //RootNode
-<<<<<<< HEAD
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: dragon_egg
-    second: {fileID: 2100000, guid: c39193e70035e6d45838f4a70a4715ec, type: 2}
-=======
->>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-<<<<<<< HEAD
-    materialLocation: 0
-=======
->>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -48,10 +25,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-<<<<<<< HEAD
-    importAnimatedCustomProperties: 0
-=======
->>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

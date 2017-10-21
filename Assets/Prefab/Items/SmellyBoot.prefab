@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 23528300071148504}
   - component: {fileID: 95062896921526726}
   - component: {fileID: 114861928437983632}
+  - component: {fileID: 54493759845395304}
+  - component: {fileID: 65998398144143824}
   m_Layer: 0
   m_Name: SmellyBoot
   m_TagString: Untagged
@@ -83,6 +85,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1078457962597118}
   m_Mesh: {fileID: 4300000, guid: e3c160f8bb24c0d4b954dbcf3b5b99ef, type: 3}
+--- !u!54 &54493759845395304
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1078457962597118}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65998398144143824
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1078457962597118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.040164396, y: 0.041445278, z: 0.00816116}
+  m_Center: {x: 0.00021081325, y: -0.0032627964, z: 0.0025655557}
 --- !u!95 &95062896921526726
 Animator:
   serializedVersion: 3
