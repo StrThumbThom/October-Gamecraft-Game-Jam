@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 691530787}
   - component: {fileID: 691530785}
   m_Layer: 0
-  m_Name: Right Wall
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -264,7 +264,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 30, y: 0.0001}
+  m_Size: {x: 45, y: 0.0001}
   m_EdgeRadius: 0
 --- !u!114 &691530785
 MonoBehaviour:
@@ -321,7 +321,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 788e700e33b50fd43826f19f0b2c8ac5, type: 2}
+  - {fileID: 2100000, guid: 2d73b3e239f01af4fbafc977a252c2fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -354,8 +354,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 691530783}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 20, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalPosition: {x: 30, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 0.5, z: 3}
   m_Children: []
   m_Father: {fileID: 589564372}
   m_RootOrder: 2
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 829733581}
   - component: {fileID: 829733579}
   m_Layer: 0
-  m_Name: Middle Wall
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,7 +436,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 788e700e33b50fd43826f19f0b2c8ac5, type: 2}
+  - {fileID: 2100000, guid: 2d73b3e239f01af4fbafc977a252c2fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -469,8 +469,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 829733578}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalPosition: {x: -30, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 589564372}
   m_RootOrder: 0
@@ -498,7 +498,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 30, y: 0.0001}
+  m_Size: {x: 45, y: 0.0001}
   m_EdgeRadius: 0
 --- !u!1 &1630717391
 GameObject:
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 1630717393}
   - component: {fileID: 1630717394}
   m_Layer: 0
-  m_Name: Left Wall
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -576,7 +576,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 788e700e33b50fd43826f19f0b2c8ac5, type: 2}
+  - {fileID: 2100000, guid: 2d73b3e239f01af4fbafc977a252c2fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -609,8 +609,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1630717391}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -20, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 589564372}
   m_RootOrder: 1
@@ -638,7 +638,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 30, y: 0.0001}
+  m_Size: {x: 45, y: 0.0001}
   m_EdgeRadius: 0
 --- !u!1 &1653785793
 GameObject:
