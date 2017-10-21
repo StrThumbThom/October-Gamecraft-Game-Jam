@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: da92e31d2c2d062469c1434372e9a7fb
-timeCreated: 1508562668
-licenseType: Free
+guid: c99ddc1551665e64db28ed8b4c70d248
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -11,27 +9,10 @@ ModelImporter:
     3300000: //RootNode
     4300000: polySurface1
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Med_Staff_handel
-    second: {fileID: 2100000, guid: 22bdb0202bf0ec34ab1535b0dca11229, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: gem_staff_med_mat
-    second: {fileID: 2100000, guid: 8d818c6ad6cc415459bde88ae2a079ad, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: med_staff_mat
-    second: {fileID: 2100000, guid: 3e5388e25e932c64184d4bf0d466a263, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -44,7 +25,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

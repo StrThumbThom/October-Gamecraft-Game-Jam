@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 6e4709610c3da6e42ba7d4420c92af5b
-timeCreated: 1508562666
-licenseType: Free
+guid: afc5fc9be38d2ae42ab0abecd1de81ab
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -11,27 +9,10 @@ ModelImporter:
     3300000: //RootNode
     4300000: polySurface9
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: High_Staff_gemColor
-    second: {fileID: 2100000, guid: c3b59a0aaf812674d9f1aa2cc282c36a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: gold_rimming
-    second: {fileID: 2100000, guid: 332c1c7b83e608d4e8aa1da626e12e49, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: high_staff_color
-    second: {fileID: 2100000, guid: b27815bafd1970d4689178852708159b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -44,7 +25,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

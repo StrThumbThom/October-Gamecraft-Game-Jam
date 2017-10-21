@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 52847bc08b8c64643ab0dd664b2736fc
-timeCreated: 1508562666
-licenseType: Free
+guid: 4a11e8751c7ce7e43aab5b3ba672ce61
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -11,22 +9,10 @@ ModelImporter:
     3300000: //RootNode
     4300000: pCylinder2
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: emerald_mat
-    second: {fileID: 2100000, guid: 359fc54096aa8b143a093a37fcece122, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: staff_handle_mat
-    second: {fileID: 2100000, guid: 3272dbcf69bcdc94c94f5ee3950d1a81, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -39,7 +25,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

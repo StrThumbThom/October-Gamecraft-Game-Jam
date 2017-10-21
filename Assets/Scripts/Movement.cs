@@ -6,8 +6,10 @@ public class Movement : MonoBehaviour
 {
     private CharacterController controller;
     private float verticalVelocity;
-    private float gravity = 25.0f;
-    private float jumpForce = 7.0f;
+
+    public float gravity = 25.0f;
+    public float jumpForce = 7.0f;
+
     // Use this for initialization
     private void Start()
     {
@@ -32,5 +34,23 @@ public class Movement : MonoBehaviour
         }
         Vector3 moveVector = new Vector3(0, verticalVelocity, 0);
         controller.Move(moveVector * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            // TODO: make it add to inventory
+            Destroy(collision.gameObject);
+        }
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("Item"))
+        {
+            // TODO: make it add to inventory
+            Destroy(hit.gameObject);
+        }
     }
 }

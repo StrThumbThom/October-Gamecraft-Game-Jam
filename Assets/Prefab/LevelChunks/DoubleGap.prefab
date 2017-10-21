@@ -34,8 +34,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4111639574016362}
-  - component: {fileID: 114653118992002604}
   - component: {fileID: 114091859920471702}
+  - component: {fileID: 114150622005385712}
   m_Layer: 0
   m_Name: DoubleGap
   m_TagString: Untagged
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9b3790c83643946a3767721602536b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114653118992002604
+--- !u!114 &114150622005385712
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
