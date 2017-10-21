@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour {
 
-    public GameObject[] items;
-
 	// Use this for initialization
 	void Start () {
+        GameObject[] items = GameObject.Find("ItemMasterList").GetComponent<ItemList>().items;
+
 		for (int i = 0; i < transform.childCount; i++)
         {
             GameObject possibleSpawner = transform.GetChild(i).gameObject;
             if (possibleSpawner.CompareTag("ItemSpawner"))
             {
                 int randomItem = Random.Range(0, items.Length);
-                Instantiate(items[randomItem], possibleSpawner.transform.position, Quaternion.identity);
+                Instantiate(items[randomItem], possibleSpawner.transform.position, items[randomItem].gameObject.transform.rotation);
             }
         }
 	}
