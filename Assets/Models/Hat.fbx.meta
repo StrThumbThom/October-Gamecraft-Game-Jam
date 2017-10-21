@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 92fd2a3d5452957409acf28c95ff0c21
-timeCreated: 1508554777
-licenseType: Pro
+guid: f9a01b4725a805f4f8ae2e6c37a2ab47
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -11,22 +9,10 @@ ModelImporter:
     3300000: //RootNode
     4300000: pCube1
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: HatBaseMat
-    second: {fileID: 2100000, guid: 04403ab2eed98604fb3bd761001df34b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: HatTopMat
-    second: {fileID: 2100000, guid: 0c0302de39581394a8ded5feb771a470, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -39,7 +25,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

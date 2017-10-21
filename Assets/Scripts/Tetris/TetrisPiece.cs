@@ -9,13 +9,14 @@ using UnityEngine.UI;
  */
 public class TetrisPiece : MonoBehaviour
 {
-
     /// <summary>
     /// Shape of the piece. A true represents that there is a block.
     /// accessed by shape[y][x]
     /// </summary>
     [SerializeField]
     private int _Shape;
+
+    public List<Vector2> GridCells;
 
     [SerializeField]
     private GameObject BlockSprite;
@@ -26,7 +27,21 @@ public class TetrisPiece : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        float _GridSize = BlockSprite.GetComponent<Image>().sprite.rect.width * 2;
+        ChangeShape(_Shape);
+    }
+
+    public void ChangeShape(int newShape)
+    {
+        foreach (Transform t in transform)
+        {
+            Destroy(t.gameObject);
+        }
+
+        _Shape = newShape;
+
+        GridCells = new List<Vector2>();
+
+        float _GridSize = BlockSprite.GetComponent<RectTransform>().sizeDelta.x;
 
         _ShapeGrid = new bool[4, 4];
 
@@ -39,7 +54,7 @@ public class TetrisPiece : MonoBehaviour
             if (_ShapeGrid[i / 4, i % 4])
             {
                 var tmp = GameObject.Instantiate(BlockSprite, transform);
-                tmp.transform.localPosition = new Vector3(i / 4, i % 4, 0) * _GridSize;
+                tmp.transform.localPosition = new Vector2(i / 4, i % 4) * _GridSize;
             }
         }
     }
@@ -47,11 +62,38 @@ public class TetrisPiece : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(2))
-        {
-            transform.Rotate(0,0, 90);
-        }
+    }
 
-        transform.position = Input.mousePosition;
+    public void Rotate()
+    {
+        transform.Rotate(0, 0, 90);
+    }
+
+    public IEnumerable<Vector2> Cells()
+    {
+        for (int y = 0; y < 4; y++)
+        {
+            for (int x = 0; x < 4; x++)
+            {
+                if (_ShapeGrid[x, y])
+                {
+                    switch ((int)transform.rotation.eulerAngles.z)
+                    {
+                        case 0:
+                            yield return new Vector2(x, -y);
+                            break;
+                        case 90:
+                            yield return new Vector2(-y, -x);
+                            break;
+                        case 180:
+                            yield return new Vector2(-x, y);
+                            break;
+                        case 270:
+                            yield return new Vector2(y, x);
+                            break;
+                    }
+                }
+            }
+        }
     }
 }
