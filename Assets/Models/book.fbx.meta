@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 43f676a9475971f44b34d28597fc6116
 timeCreated: 1508556215
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
+=======
+guid: 466df6a8760a0144aabd5154f8bec7a3
+timeCreated: 1508559904
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -11,6 +19,7 @@ ModelImporter:
     3300000: //RootNode
     4300000: polySurface2
     9500000: //RootNode
+<<<<<<< HEAD
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -22,11 +31,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: book_white
     second: {fileID: 2100000, guid: ca0c7af8f8370844ea3f0d6b7096e2a9, type: 2}
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+<<<<<<< HEAD
     materialLocation: 0
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -39,7 +53,10 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+<<<<<<< HEAD
     importAnimatedCustomProperties: 0
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

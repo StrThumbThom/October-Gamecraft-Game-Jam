@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: bc963d56c972e0d47a2875411221093c
 timeCreated: 1508556215
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
+=======
+guid: c46a2c50828a0014594d6b2f86de8e6f
+timeCreated: 1508556185
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   fileIDToRecycleName:
     100000: pCube1
     100002: pCube11
@@ -45,17 +53,23 @@ ModelImporter:
     3300000: pCube12
     4300000: pCube12
     9500000: //RootNode
+<<<<<<< HEAD
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wood_MAt
     second: {fileID: 2100000, guid: 69e872722af611344a4efb7711d9690b, type: 2}
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+<<<<<<< HEAD
     materialLocation: 0
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -68,7 +82,10 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+<<<<<<< HEAD
     importAnimatedCustomProperties: 0
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
