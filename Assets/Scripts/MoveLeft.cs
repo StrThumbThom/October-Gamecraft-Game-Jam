@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour {
 
-    float xSpeed = 0.10f;
+    public float horizontalSpeed = 0.10f;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +13,6 @@ public class MoveLeft : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.position = new Vector3(this.transform.position.x - xSpeed, transform.position.y, transform.position.z);
+        this.transform.position = new Vector3(this.transform.position.x - horizontalSpeed, transform.position.y, transform.position.z);
 	}
 }

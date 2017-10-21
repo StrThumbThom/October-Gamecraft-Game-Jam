@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114300799343925000}
   m_Layer: 0
   m_Name: book
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,3 +140,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b962a0e9aaf815846b9eb7d881b34829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontalSpeed: 0.1
