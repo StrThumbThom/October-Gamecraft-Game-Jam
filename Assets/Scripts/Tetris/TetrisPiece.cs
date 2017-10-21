@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /*
  * Represents an inventory item that is a collection of squares.
@@ -19,15 +20,14 @@ public class TetrisPiece : MonoBehaviour
     [SerializeField]
     private GameObject BlockSprite;
 
-    [SerializeField]
-    private float _GridSize = 100;
-
     //bool matrix of whether block is present in shape
     private bool[,] _ShapeGrid;
 
     // Use this for initialization
     void Start()
     {
+        float _GridSize = BlockSprite.GetComponent<Image>().sprite.rect.width * 2;
+
         _ShapeGrid = new bool[4, 4];
 
         int mask = 1;
@@ -47,6 +47,11 @@ public class TetrisPiece : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(2))
+        {
+            transform.Rotate(0,0, 90);
+        }
+
         transform.position = Input.mousePosition;
     }
 }
