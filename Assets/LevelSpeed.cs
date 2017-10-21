@@ -10,7 +10,7 @@ public class LevelSpeed : MonoBehaviour {
     private float time { get { return Time.realtimeSinceStartup; } } // total time
     private float increase = 5f; // Update increase time
     private float speedUp = 0.5f; // Speed increase time
-    private float maxSpeed = 10; // maximum speed
+    private float maxSpeed = 15f; // maximum speed
 
     private void Awake()
     {
