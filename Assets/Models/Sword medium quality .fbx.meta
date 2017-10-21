@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 68c1801c387cb984abfe32776a78019e
+timeCreated: 1508556215
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+=======
 guid: d78ee38697c438449bfac7c2939c3fcd
 timeCreated: 1508556185
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   fileIDToRecycleName:
     100000: pCube1
     100002: pCylinder1
@@ -25,10 +33,33 @@ ModelImporter:
     3300000: pCylinder3
     4300000: pCylinder3
     9500000: //RootNode
+<<<<<<< HEAD
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sword_1_gold
+    second: {fileID: 2100000, guid: eb932863227f2884d81b2a09c3c90714, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sword_blade
+    second: {fileID: 2100000, guid: f7a8e29e6149d3a4d97da721620482cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sword_handel
+    second: {fileID: 2100000, guid: b9c6525e272f20f499304a9d9f9dc1b4, type: 2}
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+<<<<<<< HEAD
+    materialLocation: 0
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -41,6 +72,10 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+<<<<<<< HEAD
+    importAnimatedCustomProperties: 0
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

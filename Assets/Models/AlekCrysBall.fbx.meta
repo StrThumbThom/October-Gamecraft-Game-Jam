@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 31fdb1b157c4cb843aee2ab5da95297c
+timeCreated: 1508556279
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+=======
 guid: 81d61eed31e01e14798fbcf410a9cf26
 timeCreated: 1508559905
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -11,10 +19,28 @@ ModelImporter:
     3300000: //RootNode
     4300000: pSphere1
     9500000: //RootNode
+<<<<<<< HEAD
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CryStalGlassBallPHong
+    second: {fileID: 2100000, guid: 462587a37ae8e3a4197ff357c9ee7ffa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlassBallBase
+    second: {fileID: 2100000, guid: c7e437e7e3c7a0240aebc54542633459, type: 2}
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+<<<<<<< HEAD
+    materialLocation: 0
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -27,6 +53,10 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+<<<<<<< HEAD
+    importAnimatedCustomProperties: 0
+=======
+>>>>>>> 3f65eb2ca0aa04a7925e2990898902641f4ffd54
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
