@@ -13,6 +13,7 @@ public class GridManager : Singleton<GridManager>{
     private Dictionary<Vector2, TetrisPiece> _Pieces;
 
     public GameObject templatePiece;
+    public Transform PiecesParent;
 
     private void Awake()
     {
@@ -42,7 +43,7 @@ public class GridManager : Singleton<GridManager>{
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            _CurrentPiece = Instantiate(templatePiece, transform.parent).GetComponent<TetrisPiece>();
+            _CurrentPiece = Instantiate(templatePiece, PiecesParent).GetComponent<TetrisPiece>();
             _CurrentPiece.ChangeShape(UnityEngine.Random.Range(1, 16));
         }
 	}
