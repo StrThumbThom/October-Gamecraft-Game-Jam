@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 4a11e8751c7ce7e43aab5b3ba672ce61
 timeCreated: 1508565834
 licenseType: Pro
 ModelImporter:
   serializedVersion: 21
+=======
+guid: 52847bc08b8c64643ab0dd664b2736fc
+timeCreated: 1508562666
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+>>>>>>> 7c04d928ef3cee13dc5aaa9ce1a5e0082a9195a1
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -11,10 +19,28 @@ ModelImporter:
     3300000: //RootNode
     4300000: pCylinder2
     9500000: //RootNode
+<<<<<<< HEAD
+=======
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emerald_mat
+    second: {fileID: 2100000, guid: 359fc54096aa8b143a093a37fcece122, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: staff_handle_mat
+    second: {fileID: 2100000, guid: 3272dbcf69bcdc94c94f5ee3950d1a81, type: 2}
+>>>>>>> 7c04d928ef3cee13dc5aaa9ce1a5e0082a9195a1
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+<<<<<<< HEAD
+=======
+    materialLocation: 0
+>>>>>>> 7c04d928ef3cee13dc5aaa9ce1a5e0082a9195a1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -27,6 +53,10 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+<<<<<<< HEAD
+=======
+    importAnimatedCustomProperties: 0
+>>>>>>> 7c04d928ef3cee13dc5aaa9ce1a5e0082a9195a1
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

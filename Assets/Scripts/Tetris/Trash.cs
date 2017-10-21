@@ -21,6 +21,7 @@ public class Trash : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        GridManager.Instance.Trash();
+        if (eventData.button == 0)
+            GridManager.Instance.Trash();
     }
 }
