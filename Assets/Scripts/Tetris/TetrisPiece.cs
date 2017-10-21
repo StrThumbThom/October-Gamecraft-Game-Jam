@@ -27,9 +27,21 @@ public class TetrisPiece : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        ChangeShape(_Shape);
+    }
+
+    public void ChangeShape(int newShape)
+    {
+        foreach (Transform t in transform)
+        {
+            Destroy(t.gameObject);
+        }
+
+        _Shape = newShape;
+
         GridCells = new List<Vector2>();
 
-        float _GridSize = BlockSprite.GetComponent<Image>().sprite.rect.width * 2;
+        float _GridSize = BlockSprite.GetComponent<RectTransform>().sizeDelta.x;
 
         _ShapeGrid = new bool[4, 4];
 
@@ -42,7 +54,7 @@ public class TetrisPiece : MonoBehaviour
             if (_ShapeGrid[i / 4, i % 4])
             {
                 var tmp = GameObject.Instantiate(BlockSprite, transform);
-                tmp.transform.localPosition = new Vector3(i / 4, i % 4, 0) * _GridSize;
+                tmp.transform.localPosition = new Vector2(i / 4, i % 4) * _GridSize;
             }
         }
     }

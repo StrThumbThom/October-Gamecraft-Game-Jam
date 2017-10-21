@@ -11,6 +11,8 @@ public class GridManager : Singleton<GridManager>{
     private TetrisPiece _CurrentPiece;
     private Dictionary<Vector2, TetrisPiece> _Pieces;
 
+    public GameObject templatePiece;
+
     private void Awake()
     {
         _Pieces = new Dictionary<Vector2, TetrisPiece>();
@@ -27,6 +29,11 @@ public class GridManager : Singleton<GridManager>{
             {
                 _CurrentPiece.Rotate();
             }
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _CurrentPiece = Instantiate(templatePiece, transform.parent).GetComponent<TetrisPiece>();
+            _CurrentPiece.ChangeShape(Random.Range(1, 16));
         }
 	}
 
@@ -95,6 +102,7 @@ public class GridManager : Singleton<GridManager>{
         {
             _Pieces.Remove(v);
         }
+        piece.GridCells.Clear();
     }
     
 }
