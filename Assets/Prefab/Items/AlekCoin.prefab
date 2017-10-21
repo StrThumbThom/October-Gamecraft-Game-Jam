@@ -9,46 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1345010360204774}
+  m_RootGameObject: {fileID: 1588666968480230}
   m_IsPrefabParent: 1
---- !u!1 &1345010360204774
+--- !u!1 &1588666968480230
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4978377980440622}
-  - component: {fileID: 33027319375560952}
-  - component: {fileID: 23128583079281148}
-  - component: {fileID: 95339708081319300}
-  - component: {fileID: 114917425679719020}
-  m_Layer: 0
+  - component: {fileID: 4864929924406458}
+  - component: {fileID: 33483567105173446}
+  - component: {fileID: 23873469304224410}
+  - component: {fileID: 95628894807038684}
+  - component: {fileID: 114431182446155578}
+  - component: {fileID: 54250349570983090}
+  - component: {fileID: 65029645282843780}
+  m_Layer: 8
   m_Name: AlekCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4978377980440622
+--- !u!4 &4864929924406458
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1345010360204774}
+  m_GameObject: {fileID: 1588666968480230}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.249, y: -4.044, z: -0.351}
+  m_LocalPosition: {x: -0, y: 0, z: -0.00023475438}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23128583079281148
+--- !u!23 &23873469304224410
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1345010360204774}
+  m_GameObject: {fileID: 1588666968480230}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -56,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 94968f86899a06e438bf28ccfce928ca, type: 2}
+  - {fileID: 2100000, guid: b93ef00a3731f094d805b72a86b73a56, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,22 +77,49 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33027319375560952
+--- !u!33 &33483567105173446
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1345010360204774}
-  m_Mesh: {fileID: 4300000, guid: 558f5335e1d3ee74db66ab81fa5811cd, type: 3}
---- !u!95 &95339708081319300
+  m_GameObject: {fileID: 1588666968480230}
+  m_Mesh: {fileID: 4300000, guid: 7e32e3b47c3b3f342888728ac3dffebe, type: 3}
+--- !u!54 &54250349570983090
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1588666968480230}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65029645282843780
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1588666968480230}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.02, z: 0.002161848}
+  m_Center: {x: 0, y: 0, z: 5.820766e-11}
+--- !u!95 &95628894807038684
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1345010360204774}
+  m_GameObject: {fileID: 1588666968480230}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 558f5335e1d3ee74db66ab81fa5811cd, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 7e32e3b47c3b3f342888728ac3dffebe, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -99,12 +128,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114917425679719020
+--- !u!114 &114431182446155578
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1345010360204774}
+  m_GameObject: {fileID: 1588666968480230}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b962a0e9aaf815846b9eb7d881b34829, type: 3}
