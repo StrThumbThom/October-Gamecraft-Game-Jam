@@ -9,13 +9,14 @@ using UnityEngine.UI;
  */
 public class TetrisPiece : MonoBehaviour
 {
-
     /// <summary>
     /// Shape of the piece. A true represents that there is a block.
     /// accessed by shape[y][x]
     /// </summary>
     [SerializeField]
     private int _Shape;
+
+    public List<Vector2> GridCells;
 
     [SerializeField]
     private GameObject BlockSprite;
@@ -26,6 +27,8 @@ public class TetrisPiece : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        GridCells = new List<Vector2>();
+
         float _GridSize = BlockSprite.GetComponent<Image>().sprite.rect.width * 2;
 
         _ShapeGrid = new bool[4, 4];
@@ -47,11 +50,38 @@ public class TetrisPiece : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(2))
-        {
-            transform.Rotate(0,0, 90);
-        }
+    }
 
-        transform.position = Input.mousePosition;
+    public void Rotate()
+    {
+        transform.Rotate(0, 0, 90);
+    }
+
+    public IEnumerable<Vector2> Cells()
+    {
+        for (int y = 0; y < 4; y++)
+        {
+            for (int x = 0; x < 4; x++)
+            {
+                if (_ShapeGrid[x, y])
+                {
+                    switch ((int)transform.rotation.eulerAngles.z)
+                    {
+                        case 0:
+                            yield return new Vector2(x, -y);
+                            break;
+                        case 90:
+                            yield return new Vector2(-y, -x);
+                            break;
+                        case 180:
+                            yield return new Vector2(-x, y);
+                            break;
+                        case 270:
+                            yield return new Vector2(y, x);
+                            break;
+                    }
+                }
+            }
+        }
     }
 }
