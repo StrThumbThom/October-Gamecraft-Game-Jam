@@ -18,9 +18,6 @@ public class GridCell : MonoBehaviour, IPointerClickHandler {
 
     public void OnPointerClick(PointerEventData eventData)
     {
-
-        Debug.Log(transform.GetSiblingIndex() / 20);
-
         if(eventData.button == 0)
             GridManager.Instance.CellClicked(transform.GetSiblingIndex()%20, transform.GetSiblingIndex()/20);
     }

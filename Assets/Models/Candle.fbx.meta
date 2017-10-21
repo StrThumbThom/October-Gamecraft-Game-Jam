@@ -1,34 +1,48 @@
 fileFormatVersion: 2
-guid: 43f3f9c52b7a6294384a8fa0a906fa35
+guid: 9b379ea87b1e6b04598b1dda704284e0
+timeCreated: 1508564614
+licenseType: Pro
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: pCube1
+    100000: //RootNode
     100002: pCylinder1
     100004: pCylinder2
     100006: pCylinder3
-    100008: //RootNode
-    100010: transform1
-    100012: transform2
-    100014: transform3
-    400000: pCube1
+    100008: pCylinder4
+    100010: polySurface1
+    100012: polySurface2
+    100014: polySurface3
+    100016: transform1
+    100018: transform2
+    100020: transform3
+    100022: transform4
+    100024: transform5
+    100026: transform6
+    400000: //RootNode
     400002: pCylinder1
     400004: pCylinder2
     400006: pCylinder3
-    400008: //RootNode
-    400010: transform1
-    400012: transform2
-    400014: transform3
-    2300000: pCylinder3
-    3300000: pCylinder3
-    4300000: pCylinder3
+    400008: pCylinder4
+    400010: polySurface1
+    400012: polySurface2
+    400014: polySurface3
+    400016: transform1
+    400018: transform2
+    400020: transform3
+    400022: transform4
+    400024: transform5
+    400026: transform6
+    2300000: pCylinder4
+    3300000: pCylinder4
+    4300000: pCylinder4
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: sword_blade_and_handel
-    second: {fileID: 2100000, guid: d4bde07f41256044d8f4814694a420aa, type: 2}
+      name: gold
+    second: {fileID: 2100000, guid: be14b713d1b20144293b9be8659e2963, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
