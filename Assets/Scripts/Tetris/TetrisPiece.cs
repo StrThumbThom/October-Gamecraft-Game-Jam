@@ -19,6 +19,9 @@ public class TetrisPiece : MonoBehaviour
     [SerializeField]
     private GameObject BlockSprite;
 
+    [SerializeField]
+    private float _GridSize = 100;
+
     //bool matrix of whether block is present in shape
     private bool[,] _ShapeGrid;
 
@@ -36,7 +39,7 @@ public class TetrisPiece : MonoBehaviour
             if (_ShapeGrid[i / 4, i % 4])
             {
                 var tmp = GameObject.Instantiate(BlockSprite, transform);
-                tmp.transform.localPosition = new Vector3(i / 4, i % 4, 0) * 100;
+                tmp.transform.localPosition = new Vector3(i / 4, i % 4, 0) * _GridSize;
             }
         }
     }
