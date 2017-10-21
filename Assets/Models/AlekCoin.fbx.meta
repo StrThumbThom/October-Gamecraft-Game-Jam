@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: e3c160f8bb24c0d4b954dbcf3b5b99ef
+guid: 558f5335e1d3ee74db66ab81fa5811cd
+timeCreated: 1508559904
+licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -7,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pPlane1
+    4300000: pCylinder4
     9500000: //RootNode
   materials:
     importMaterials: 1
