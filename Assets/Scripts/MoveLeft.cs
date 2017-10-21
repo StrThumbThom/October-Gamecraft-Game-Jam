@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour {
 
-    public float horizontalSpeed = 0.10f;
+    private float horizontalSpeed;
 
 	// Use this for initialization
 	void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.position = new Vector3(this.transform.position.x - horizontalSpeed, transform.position.y, transform.position.z);
+        horizontalSpeed = LevelSpeed.scrollSpeed;
+        this.transform.position = new Vector3(this.transform.position.x + (horizontalSpeed * Time.deltaTime), transform.position.y, transform.position.z);
 	}
 }
