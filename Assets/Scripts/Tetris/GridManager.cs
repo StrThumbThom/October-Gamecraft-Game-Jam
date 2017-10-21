@@ -44,7 +44,7 @@ public class GridManager : Singleton<GridManager>{
         else if (Input.GetKeyDown(KeyCode.Space))
         {
             _CurrentPiece = Instantiate(templatePiece, PiecesParent).GetComponent<TetrisPiece>();
-            _CurrentPiece.ChangeShape(UnityEngine.Random.Range(1, 16));
+            _CurrentPiece.ChangeShape(UnityEngine.Random.Range(1, 65536));
         }
 	}
 
